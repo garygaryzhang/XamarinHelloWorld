@@ -16,10 +16,6 @@ namespace XamarinHelloWorld
         {
             InitializeComponent();
         }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            DisplayAlert("Tittle", "Hello World", "OK");
-        }
+        
     }
 }
