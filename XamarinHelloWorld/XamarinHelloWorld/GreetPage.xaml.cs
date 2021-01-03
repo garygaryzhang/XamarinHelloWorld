@@ -29,21 +29,21 @@ namespace XamarinHelloWorld
             //        Padding = new Thickness(30, 20, 0, 0);
             //});
 
-            switch (Device.RuntimePlatform)
-            {
-                case Device.iOS:
-                    this.Padding = new Thickness(0, 20, 0, 0);
-                    break;
-                case Device.Android:
-                    this.Padding = new Thickness(10, 20, 0, 0);
-                    break;
-                case Device.UWP:
-                    this.Padding = new Thickness(20, 20, 0, 0);
-                    break;
-                case Device.macOS:
-                    this.Padding = new Thickness(30, 20, 0, 0);
-                    break;
-            }
+            //switch (Device.RuntimePlatform)
+            //{
+            //    case Device.iOS:
+            //        this.Padding = new Thickness(0, 20, 0, 0);
+            //        break;
+            //    case Device.Android:
+            //        this.Padding = new Thickness(10, 20, 0, 0);
+            //        break;
+            //    case Device.UWP:
+            //        this.Padding = new Thickness(20, 20, 0, 0);
+            //        break;
+            //    case Device.macOS:
+            //        this.Padding = new Thickness(30, 20, 0, 0);
+            //        break;
+            //}
         }
     }
 }
