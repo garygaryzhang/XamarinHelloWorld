@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinHelloWorld.StackPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     BackgroundColor= "LightGray"
+                     Padding="40"
+                     Spacing="20"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center">
+            <StackLayout>
+                <Image Source="https://i.pinimg.com/originals/49/4b/09/494b091995cf0f66cd953a48077ae0c2.png" />
+                <Label Text="Succulent1"/>
+            </StackLayout>
+            <StackLayout>
+                <Image Source="https://www.kindpng.com/picc/m/49-494670_succulent-aesthetic-png-transparent-png.png" />
+                <Label Text="Succulent2"/>
+            </StackLayout>
+            <StackLayout>
+                <Image Source="https://banner2.cleanpng.com/20180728/yue/kisspng-cacti-and-succulents-succulent-plant-cactus-molded-succelent-5b5c715e8af6e5.9002382015327849905692.jpg" />
+                <Label Text="Succulent3"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
