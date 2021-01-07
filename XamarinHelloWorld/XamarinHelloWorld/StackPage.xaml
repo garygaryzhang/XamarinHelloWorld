@@ -9,8 +9,7 @@
                      Spacing="20"
                      VerticalOptions="Center"
                      HorizontalOptions="Center">
-            <StackLayout
-                
+            <StackLayout>
                 <Image Source="https://i.pinimg.com/originals/49/4b/09/494b091995cf0f66cd953a48077ae0c2.png" />
                 <Label Text="Succulent1"/>
             </StackLayout>
