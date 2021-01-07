@@ -10,7 +10,7 @@ namespace XamarinHelloWorld
         {
             InitializeComponent();
 
-            MainPage = new StackPage();
+            MainPage = new StackExercisePage();
         }
 
         protected override void OnStart()
