@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinHelloWorld.StackExerciseInstagram">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 50, 0, 0">
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="10">
+                <Label Text="nash_garyzhang" />
+            </StackLayout>
+            <Image Source="http://heneedsfood.com/wp-content/uploads/2019/10/01-xian-bell-tower.jpg" 
+                   HorizontalOptions="FillAndExpand" />
+            <StackLayout Orientation="Horizontal"
+                         Spacing="20"
+                         Padding="10, 0">
+                <Button Text="Like" 
+                        TextColor="Blue"/>
+                <Button Text="Comment"
+                        TextColor="Blue"/>
+                <Button Text="Share"
+                        TextColor="Blue"/>
+            </StackLayout>
+            <StackLayout Padding="10">
+                <BoxView Color="#f0f0f0"
+                         HeightRequest="1"/>
+                <Label Text="700 Likes" 
+                       TextColor="Black"
+                       FontAttributes="Bold"/>
+                <Label Text="This is a shot from my hometown Xi'an, China. I rode my skateboard by the center of the city, Bell Tower." 
+                       TextColor="#444" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
