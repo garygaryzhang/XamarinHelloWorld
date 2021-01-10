@@ -10,7 +10,7 @@ namespace XamarinHelloWorld
         {
             InitializeComponent();
 
-            MainPage = new StackExerciseInstagram();
+            MainPage = new GridPage();
         }
 
         protected override void OnStart()
