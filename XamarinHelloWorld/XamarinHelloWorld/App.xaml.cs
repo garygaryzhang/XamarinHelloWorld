@@ -10,7 +10,7 @@ namespace XamarinHelloWorld
         {
             InitializeComponent();
 
-            MainPage = new DialNumberPage();
+            MainPage = new GridLogin();
         }
 
         protected override void OnStart()
