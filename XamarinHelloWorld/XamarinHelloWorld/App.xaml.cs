@@ -10,7 +10,7 @@ namespace XamarinHelloWorld
         {
             InitializeComponent();
 
-            MainPage = new AbsolutePage();
+            MainPage = new AbsoluteLayoutAdsPage();
         }
 
         protected override void OnStart()
