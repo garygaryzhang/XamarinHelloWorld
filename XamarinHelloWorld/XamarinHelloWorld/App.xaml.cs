@@ -10,7 +10,7 @@ namespace XamarinHelloWorld
         {
             InitializeComponent();
 
-            MainPage = new ImagePage();
+            MainPage = new EmbeddedImages();
         }
 
         protected override void OnStart()
