@@ -10,7 +10,7 @@ namespace XamarinHelloWorld
         {
             InitializeComponent();
 
-            MainPage = new ImagePage();
+            MainPage = new CircleProfilePage();
         }
 
         protected override void OnStart()

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    BackgroundColor="SteelBlue"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:XamarinHelloWorld.MarkupExtensions"
+    x:Class="XamarinHelloWorld.CircleProfilePage">
+
+    <!--<ic:CircleImage
+        WidthRequest="100"
+        HeightRequest="100"
+        Aspect="AspectFill"
+        Source="{local:EmbeddedImage SoXamarinHelloWorld.Images.succulent2.jpg}"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        />-->
+    
+    <StackLayout Padding="40"
+                 Spacing="40"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"
+                 Orientation="Vertical" >        
+    <Image Source="{local:EmbeddedImage XamarinHelloWorld.Images.ricca.jpg}"
+           WidthRequest="100"   
+           HeightRequest="100">
+        <Image.Clip>
+            <EllipseGeometry
+                Center="50,50"
+                RadiusX="50"
+                RadiusY="50"/>
+        </Image.Clip>
+    </Image>
+    <Label Text="Meow Meow" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" />
+    <Image Source="{local:EmbeddedImage XamarinHelloWorld.Images.mac.jpg}"
+           WidthRequest="100"   
+           HeightRequest="100">
+        <Image.Clip>
+            <EllipseGeometry
+                Center="50,50"
+                RadiusX="50"
+                RadiusY="50"/>
+        </Image.Clip>
+    </Image>
+    <Label Text="Ruff Ruff" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" />
+    </StackLayout>
+
+</ContentPage>

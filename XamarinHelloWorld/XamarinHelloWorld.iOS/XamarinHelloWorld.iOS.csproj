@@ -123,13 +123,16 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.1905" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.0" />
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
+      <Version>3.0.0.5</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\XamarinHelloWorld\XamarinHelloWorld.csproj">
-      <Project>{49946059-0E0C-4B02-A3AD-8B5270C21149}</Project>
+      <Project>{D2D5E9E8-FC77-477A-A308-62A7716D6741}</Project>
       <Name>XamarinHelloWorld</Name>
     </ProjectReference>
   </ItemGroup>
