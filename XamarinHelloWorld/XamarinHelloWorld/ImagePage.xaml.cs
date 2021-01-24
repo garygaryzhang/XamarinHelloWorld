@@ -15,12 +15,6 @@ namespace XamarinHelloWorld
         public ImagePage()
         {
             InitializeComponent();
-
-            //var imageSource = new UriImageSource { Uri = new Uri("https://www.1800flowers.com/blog/wp-content/uploads/2017/07/cactus-succulent-dish-garden.jpg") };
-            //imageSource.CachingEnabled = false;
-            //image.Source = imageSource;
-
-            image.Source = ImageSource.FromResource("XamarinHelloWorld.Images.succulent2.jpg");
         }
     }
 }
