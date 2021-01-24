@@ -11,6 +11,7 @@ namespace XamarinHelloWorld
             InitializeComponent();
 
             MainPage = new CircleProfilePage();
+            //test
         }
 
         protected override void OnStart()
