@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="Black" 
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:XamarinHelloWorld.MarkupExtensions"
+             x:Class="XamarinHelloWorld.ImageSlideShowPage">
+    <AbsoluteLayout>
+        <!--put the image first because button even won't fire up since absolute layout put image 
+        on the top if it is the last one-->
+        <Image x:Name="image" Aspect="AspectFit"
+               AbsoluteLayout.LayoutBounds="0, 0.5, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
+        
+        <Button x:Name="btnleft"
+                Clicked="btnleft_Clicked"
+                AbsoluteLayout.LayoutBounds="0, 0.1, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional" >
+            <Button.Image>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="leftarrow24.png"
+                            Android="leftarrow24.png" />
+            </Button.Image>
+        </Button>
+        <ActivityIndicator IsRunning="{Binding Source={x:Reference image}, Path=IsLoading}"
+                           Color="White"
+                           AbsoluteLayout.LayoutBounds="0.5, 0.1, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <Button x:Name="btnright"
+                Clicked="btnright_Clicked"
+                AbsoluteLayout.LayoutBounds="1, 0.1, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional" >
+            <Button.Image>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="rightarrow24.png"
+                            Android="rightarrow24.png" />
+            </Button.Image>
+        </Button>
+        
+    </AbsoluteLayout>
+</ContentPage>
