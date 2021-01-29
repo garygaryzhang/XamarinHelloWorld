@@ -10,9 +10,8 @@ namespace XamarinHelloWorld
         {
             InitializeComponent();
 
-            MainPage = new CircleProfilePage();
-            //ok
-            //gotcha
+            MainPage = new ImageSlideShowPage();
+
         }
 
         protected override void OnStart()

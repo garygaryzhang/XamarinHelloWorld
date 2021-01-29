@@ -12,6 +12,11 @@
 
   <ItemGroup>
     <None Remove="Images\background.jpg" />
+    <None Remove="Images\cityview0.jpg" />
+    <None Remove="Images\cityview1.jpg" />
+    <None Remove="Images\cityview2.jpg" />
+    <None Remove="Images\cityview3.jpg" />
+    <None Remove="Images\cityview4.jpg" />
     <None Remove="Images\succulent1.jpg" />
     <None Remove="Images\succulent2.jpg" />
     <None Remove="Images\succulent3.jpg" />
@@ -21,6 +26,11 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Images\background.jpg" />
+    <EmbeddedResource Include="Images\cityview0.jpg" />
+    <EmbeddedResource Include="Images\cityview1.jpg" />
+    <EmbeddedResource Include="Images\cityview2.jpg" />
+    <EmbeddedResource Include="Images\cityview3.jpg" />
+    <EmbeddedResource Include="Images\cityview4.jpg" />
     <EmbeddedResource Include="Images\succulent1.jpg" />
     <EmbeddedResource Include="Images\succulent2.jpg" />
     <EmbeddedResource Include="Images\succulent3.jpg" />
@@ -63,6 +73,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ImagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ImageSlideShowPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="RelativeLayoutAdsPage.xaml">
