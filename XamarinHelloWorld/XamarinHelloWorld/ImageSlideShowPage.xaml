@@ -3,7 +3,16 @@
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:XamarinHelloWorld.MarkupExtensions"
-             x:Class="XamarinHelloWorld.ImageSlideShowPage">
+             x:Class="XamarinHelloWorld.ImageSlideShowPage"
+             xmlns:rainbows="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows"
+             rainbows:DebugRainbow.GridLineOpacity=" .25"
+             rainbows:DebugRainbow.GridOrigin="TopLeft"
+             rainbows:DebugRainbow.HorizontalItemSize="16"
+             rainbows:DebugRainbow.VerticalItemSize="16"
+             rainbows:DebugRainbow.MajorGridLineInterval="10"
+             rainbows:DebugRainbow.MajorGridLineOpacity=" .25"
+             rainbows:DebugRainbow.ShowColors="False"
+             rainbows:DebugRainbow.ShowGrid="True">
     <AbsoluteLayout>
         <!--put the image first because button even won't fire up since absolute layout put image 
         on the top if it is the last one-->
