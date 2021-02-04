@@ -10,7 +10,7 @@ namespace XamarinHelloWorld
         {
             InitializeComponent();
 
-            MainPage = new SimpleListPage();
+            MainPage = new CellListPage();
 
         }
 
