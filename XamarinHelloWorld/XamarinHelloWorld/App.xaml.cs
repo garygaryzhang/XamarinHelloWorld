@@ -10,7 +10,7 @@ namespace XamarinHelloWorld
         {
             InitializeComponent();
 
-            MainPage = new ImageSlideShowPage();
+            MainPage = new SimpleListPage();
 
         }
 
