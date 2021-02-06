@@ -17,11 +17,17 @@ namespace XamarinHelloWorld
         {
             InitializeComponent();
 
-            listView.ItemsSource = new List<Contact>
+            listView.ItemsSource = new List<ContactGroup>
             {
-                new Contact { Name = "Gary", ImageUrl = "https://picsum.photos/id/237/200", Status = "YOLO"},
-                new Contact { Name = "Kendal", ImageUrl = "https://picsum.photos/236/200", Status = "Hello World!"},
-                new Contact { Name = "Ricca", ImageUrl = "https://picsum.photos/235/200", Status = "Meow World!"}
+                new ContactGroup("G","G") {
+                    new Contact { Name = "Gary", ImageUrl = "https://picsum.photos/id/237/200", Status = "YOLO"}
+                },
+                new ContactGroup("K","K") {
+                    new Contact { Name = "Kendal", ImageUrl = "https://picsum.photos/236/200", Status = "Hello World!"}
+                },
+                new ContactGroup("R","R") {
+                    new Contact { Name = "Ricca", ImageUrl = "https://picsum.photos/235/200", Status = "Meow World!"}
+                }
             };
 
         }
