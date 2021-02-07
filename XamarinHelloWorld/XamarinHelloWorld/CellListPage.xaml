@@ -4,9 +4,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinHelloWorld.CellListPage">
     <ListView x:Name="listView" 
-              IsGroupingEnabled="True"
-              GroupDisplayBinding="{Binding Title}"
-              GroupShortNameBinding="{Binding ShortTitle}">
+              ItemTapped="listView_ItemTapped"
+              ItemSelected="listView_ItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding Name}" Detail="{Binding Status}" />
