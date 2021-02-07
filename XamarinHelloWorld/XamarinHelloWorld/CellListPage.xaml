@@ -5,7 +5,9 @@
              x:Class="XamarinHelloWorld.CellListPage">
     <ListView x:Name="listView" 
               ItemTapped="listView_ItemTapped"
-              ItemSelected="listView_ItemSelected">
+              ItemSelected="listView_ItemSelected"
+              IsPullToRefreshEnabled="True"
+              Refreshing="listView_Refreshing">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding Name}" Detail="{Binding Status}" >
