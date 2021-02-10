@@ -19,14 +19,7 @@ namespace XamarinHelloWorld
         {
             InitializeComponent();
 
-            _contacts = new ObservableCollection<Contact>
-            {
-                new Contact { Name = "Gary", ImageUrl = "https://picsum.photos/id/237/200", Status = "YOLO"},
-                new Contact { Name = "Kendal", ImageUrl = "https://picsum.photos/236/200", Status = "Hello World!"},
-                new Contact { Name = "Ricca", ImageUrl = "https://picsum.photos/235/200", Status = "Meow World!"}
-            };
-
-            listView.ItemsSource = _contacts;
+            listView.ItemsSource = GetContactsForSearchBar();
         }
 
         ObservableCollection<Contact> GetContacts()
@@ -70,6 +63,25 @@ namespace XamarinHelloWorld
             listView.ItemsSource = GetContacts();
 
             listView.EndRefresh();
+        }
+
+        IEnumerable<Contact> GetContactsForSearchBar(string searchText = null) {
+            var contacts = new List<Contact>
+            {
+                new Contact { Name = "Gary", ImageUrl = "https://picsum.photos/id/237/200", Status = "YOLO"},
+                new Contact { Name = "Kendal", ImageUrl = "https://picsum.photos/236/200", Status = "Hello World!"},
+                new Contact { Name = "Ricca", ImageUrl = "https://picsum.photos/235/200", Status = "Meow World!"}
+            };
+
+            if (String.IsNullOrWhiteSpace(searchText))
+                return contacts;
+
+            return contacts.Where(c => c.Name.StartsWith(searchText));
+        }
+
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            listView.ItemsSource = GetContactsForSearchBar(e.NewTextValue);
         }
     }
 }
