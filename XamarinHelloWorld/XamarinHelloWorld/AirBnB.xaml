@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinHelloWorld.AirBnB">
+    <StackLayout>
+        <StackLayout Padding="20">
+            <SearchBar Placeholder="Search..." TextChanged="SearchBar_TextChanged" />
+            <Label Text="Recent Searches" FontAttributes="Bold" />
+        </StackLayout>
+        <StackLayout Padding="20">
+                <ListView x:Name="listView" 
+                  ItemTapped="listView_ItemTapped"
+                  ItemSelected="listView_ItemSelected"
+                  IsPullToRefreshEnabled="True"
+                  Refreshing="listView_Refreshing">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" Detail="{Binding Status}" >
+                            <TextCell.ContextActions>
+                                <MenuItem Text="Delete" Clicked="Delete_Clicked" IsDestructive="true" CommandParameter="{Binding .}" />
+                            </TextCell.ContextActions>
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
